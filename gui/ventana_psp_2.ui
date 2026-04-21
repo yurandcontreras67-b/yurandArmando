@@ -15,47 +15,89 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog {
-    background-color: #1a0033;
+    background: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0f172a,
+        stop:1 #1e1b4b
+    );
 }
 
+/* Etiquetas generales */
 QLabel {
-    color: #38bdf8;
-    font-size: 12px;
+    color: #7dd3fc;
+    font-size: 13px;
+    font-weight: 500;
 }
 
+/* Campos de texto */
 QLineEdit {
-    background-color: #1e293b;
+    background-color: #020617;
     border: 2px solid #38bdf8;
-    border-radius: 8px;
-    padding: 5px;
-    color: white;
-}
-
-QPushButton {
-    background-color: #a78bfa;
-    color: black;
     border-radius: 10px;
     padding: 6px;
+    color: #e2e8f0;
+    selection-background-color: #38bdf8;
+    selection-color: black;
+}
+
+QLineEdit:focus {
+    border: 2px solid #a78bfa;
+    background-color: #020617;
+}
+
+/* Botones */
+QPushButton {
+    background: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #a78bfa,
+        stop:1 #6366f1
+    );
+    color: white;
+    border-radius: 12px;
+    padding: 8px;
     font-weight: bold;
+    border: none;
 }
 
 QPushButton:hover {
-    background-color: #8b5cf6;
+    background: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #c4b5fd,
+        stop:1 #8b5cf6
+    );
 }
 
+QPushButton:pressed {
+    background-color: #4f46e5;
+}
+
+/* Labels destacados */
 QLabel#label_B0,
 QLabel#label_B1,
 QLabel#label_r,
 QLabel#label_r2,
 QLabel#label_yk {
-    background-color: #1e293b;
+    background-color: #020617;
     border: 2px solid #38bdf8;
-    border-radius: 6px;
-    padding: 4px;
-    color: #facc15;
+    border-radius: 8px;
+    padding: 6px;
+    color: #fde047;
     font-weight: bold;
+    font-size: 13px;
 }
-</string>
+
+/* Efecto tipo &quot;tarjeta&quot; */
+QLabel#label_B0:hover,
+QLabel#label_B1:hover,
+QLabel#label_r:hover,
+QLabel#label_r2:hover,
+QLabel#label_yk:hover {
+    border: 2px solid #a78bfa;
+    background-color: #0f172a;
+}</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -82,6 +124,8 @@ QLabel#label_yk {
    <property name="font">
     <font>
      <pointsize>-1</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -126,7 +170,7 @@ QLabel#label_yk {
     <rect>
      <x>300</x>
      <y>50</y>
-     <width>61</width>
+     <width>81</width>
      <height>16</height>
     </rect>
    </property>
@@ -146,6 +190,8 @@ QLabel#label_yk {
    <property name="font">
     <font>
      <pointsize>-1</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
