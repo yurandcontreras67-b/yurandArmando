@@ -14,49 +14,89 @@
    <string>Ejercicio PSP1</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-
-QMainWindow {
-    background-color: #f3f0ff;
+   <string notr="true">QMainWindow {
+background: qlineargradient(
+spread:pad,
+x1:0, y1:0, x2:1, y2:1,
+stop:0 #ecfdf5,
+stop:1 #d1fae5
+);
 }
 
+/* Etiquetas generales */
 QLabel {
-    color: #4b2a7a;
-    font-size: 12px;
+color: #065f46;
+font-size: 13px;
+font-weight: 500;
 }
 
+/* Campos de texto */
 QLineEdit {
-    background-color: white;
-    border: 2px solid #a77bff;
-    border-radius: 8px;
-    padding: 5px;
+background-color: #ffffff;
+border: 2px solid #10b981;
+border-radius: 10px;
+padding: 6px;
+color: #064e3b;
+selection-background-color: #10b981;
+selection-color: black;
 }
 
+QLineEdit:focus {
+border: 2px solid #34d399;
+background-color: #ffffff;
+}
+
+/* Botones */
 QPushButton {
-    background-color: #a77bff;
-    color: white;
-    border-radius: 10px;
-    padding: 6px;
-    font-weight: bold;
+background: qlineargradient(
+spread:pad,
+x1:0, y1:0, x2:1, y2:0,
+stop:0 #34d399,
+stop:1 #059669
+);
+color: white;
+border-radius: 12px;
+padding: 8px;
+font-weight: bold;
+border: none;
 }
 
 QPushButton:hover {
-    background-color: #8f5cff;
+background: qlineargradient(
+spread:pad,
+x1:0, y1:0, x2:1, y2:0,
+stop:0 #6ee7b7,
+stop:1 #10b981
+);
 }
 
 QPushButton:pressed {
-    background-color: #6f3fd1;
+background-color: #047857;
 }
 
+/* Labels destacados */
 QLabel#label_B0,
 QLabel#label_B1,
 QLabel#label_r,
 QLabel#label_r2,
 QLabel#label_yk {
-    background-color: white;
-    border: 2px solid #a77bff;
-    border-radius: 6px;
-    padding: 4px;
+background-color: #ffffff;
+border: 2px solid #10b981;
+border-radius: 8px;
+padding: 6px;
+color: #065f46;
+font-weight: bold;
+font-size: 13px;
+}
+
+/* Hover tipo tarjeta */
+QLabel#label_B0:hover,
+QLabel#label_B1:hover,
+QLabel#label_r:hover,
+QLabel#label_r2:hover,
+QLabel#label_yk:hover {
+border: 2px solid #34d399;
+background-color: #d1fae5;
 }
 </string>
   </property>
@@ -75,6 +115,8 @@ QLabel#label_yk {
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
@@ -87,6 +129,8 @@ QLabel#label_yk {
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
@@ -106,6 +150,8 @@ QLabel#label_yk {
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
@@ -125,6 +171,8 @@ QLabel#label_yk {
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
@@ -144,6 +192,8 @@ QLabel#label_yk {
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
@@ -163,6 +213,8 @@ QLabel#label_yk {
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
