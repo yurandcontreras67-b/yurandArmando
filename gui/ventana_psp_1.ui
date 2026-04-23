@@ -6,105 +6,87 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>604</width>
-    <height>409</height>
+    <width>609</width>
+    <height>383</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Ejercicio PSP1</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow {
-background: qlineargradient(
-spread:pad,
-x1:0, y1:0, x2:1, y2:1,
-stop:0 #ecfdf5,
-stop:1 #d1fae5
-);
-}
+   <string notr="true">QDialog {
+            background: qlineargradient(
+                spread:pad,
+                x1:0, y1:0, x2:1, y2:1,
+                stop:0 #022c22,
+                stop:1 #064e3b
+            );
+        }
 
-/* Etiquetas generales */
-QLabel {
-color: #065f46;
-font-size: 13px;
-font-weight: 500;
-}
+        QLabel {
+            color: #6ee7b7;
+            font-size: 13px;
+            font-weight: 500;
+        }
 
-/* Campos de texto */
-QLineEdit {
-background-color: #ffffff;
-border: 2px solid #10b981;
-border-radius: 10px;
-padding: 6px;
-color: #064e3b;
-selection-background-color: #10b981;
-selection-color: black;
-}
+        QLineEdit {
+            background-color: #020617;
+            border: 2px solid #10b981;
+            border-radius: 10px;
+            padding: 6px;
+            color: #d1fae5;
+            selection-background-color: #10b981;
+            selection-color: black;
+        }
 
-QLineEdit:focus {
-border: 2px solid #34d399;
-background-color: #ffffff;
-}
+        QLineEdit:focus {
+            border: 2px solid #34d399;
+            background-color: #020617;
+        }
 
-/* Botones */
-QPushButton {
-background: qlineargradient(
-spread:pad,
-x1:0, y1:0, x2:1, y2:0,
-stop:0 #34d399,
-stop:1 #059669
-);
-color: white;
-border-radius: 12px;
-padding: 8px;
-font-weight: bold;
-border: none;
-}
+        QPushButton {
+            background: qlineargradient(
+                spread:pad,
+                x1:0, y1:0, x2:1, y2:0,
+                stop:0 #34d399,
+                stop:1 #059669
+            );
+            color: white;
+            border-radius: 12px;
+            padding: 8px;
+            font-weight: bold;
+            border: none;
+        }
 
-QPushButton:hover {
-background: qlineargradient(
-spread:pad,
-x1:0, y1:0, x2:1, y2:0,
-stop:0 #6ee7b7,
-stop:1 #10b981
-);
-}
+        QPushButton:hover {
+            background: qlineargradient(
+                spread:pad,
+                x1:0, y1:0, x2:1, y2:0,
+                stop:0 #6ee7b7,
+                stop:1 #10b981
+            );
+        }
 
-QPushButton:pressed {
-background-color: #047857;
-}
+        QPushButton:pressed {
+            background-color: #047857;
+        }
 
-/* Labels destacados */
-QLabel#label_B0,
-QLabel#label_B1,
-QLabel#label_r,
-QLabel#label_r2,
-QLabel#label_yk {
-background-color: #ffffff;
-border: 2px solid #10b981;
-border-radius: 8px;
-padding: 6px;
-color: #065f46;
-font-weight: bold;
-font-size: 13px;
-}
-
-/* Hover tipo tarjeta */
-QLabel#label_B0:hover,
-QLabel#label_B1:hover,
-QLabel#label_r:hover,
-QLabel#label_r2:hover,
-QLabel#label_yk:hover {
-border: 2px solid #34d399;
-background-color: #d1fae5;
-}
+        QLabel#LABEL_RESULTADOS {
+            background-color: #020617;
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            padding: 6px;
+            color: #bbf7d0;
+            font-weight: bold;
+            font-size: 13px;
+        }
 </string>
   </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>50</y>
+     <x>330</x>
+     <y>80</y>
      <width>231</width>
      <height>241</height>
     </rect>
@@ -235,7 +217,7 @@ background-color: #d1fae5;
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>20</y>
+     <y>40</y>
      <width>251</width>
      <height>281</height>
     </rect>

@@ -11,7 +11,7 @@ class VentanaPSP1(QDialog):
         self.btn_caso2.clicked.connect(self.caso2)
         self.btn_caso3.clicked.connect(self.caso3)
         self.btn_caso4.clicked.connect(self.caso4)
-
+        
         self.btn_calcular.clicked.connect(self.calcular)
 
         self.x = None

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>583</width>
+    <height>366</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>24</height>
+     <width>583</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuEjercicios">
@@ -29,6 +29,8 @@
     </property>
     <addaction name="btn_psp1"/>
     <addaction name="btn_psp2"/>
+    <addaction name="btn_psp3"/>
+    <addaction name="btn_psp4"/>
     <addaction name="separator"/>
     <addaction name="btn_salir"/>
    </widget>
@@ -48,6 +50,16 @@
   <action name="btn_salir">
    <property name="text">
     <string>Salir</string>
+   </property>
+  </action>
+  <action name="btn_psp3">
+   <property name="text">
+    <string>PSP3</string>
+   </property>
+  </action>
+  <action name="btn_psp4">
+   <property name="text">
+    <string>PSP4</string>
    </property>
   </action>
  </widget>
