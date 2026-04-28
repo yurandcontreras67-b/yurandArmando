@@ -59,5 +59,15 @@ class PSP1(object):
         self.calcular_r()
         self.calcular_r2()
 
+    def calcular(self): 
+        self.calcular_todo()
+
+        return {
+            "b0": self.B0,
+            "b1": self.B1,
+            "r": self.r,
+            "r2": self.r2
+        }
+
     def predecir(self, xk):
         return self.B0 + self.B1 * xk

@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QMainWindow
 from load.load_ventana_psp1 import VentanaPSP1
 from load.load_ventana_psp2 import VentanaPSP2
 from load.load_ventana_psp3 import VentanaPSP3
+from load.load_ventana_psp4 import VentanaPSP4
 
 
 class MenuPrincipal(QMainWindow):

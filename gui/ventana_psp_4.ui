@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>642</width>
+    <height>513</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -82,96 +82,389 @@
         }
 </string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>200</y>
-     <width>261</width>
-     <height>31</height>
+     <x>40</x>
+     <y>10</y>
+     <width>251</width>
+     <height>281</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Calcular</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>50</y>
-     <width>91</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_5">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="3" column="1" colspan="2">
+     <widget class="QPushButton" name="btn_calcular">
       <property name="text">
-       <string>Resultado</string>
+       <string>calcular</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLineEdit" name="edit_xk"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="btn_caso1">
+      <property name="text">
+       <string>caso 1</string>
       </property>
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>0</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>40</y>
-     <width>181</width>
-     <height>148</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>X</string>
+       <string>xK</string>
       </property>
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="edit_n"/>
     </item>
-    <item row="1" column="0">
+    <item row="0" column="0">
      <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>Y</string>
+       <string>n</string>
       </property>
      </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="lineEdit_4"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>P</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="lineEdit_3"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>XK</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="lineEdit_2"/>
     </item>
    </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>30</y>
+     <width>231</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="3" column="1" colspan="2">
+     <widget class="QLabel" name="label_r2_2">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLabel" name="label_B1_2">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QLabel" name="label_yk_2">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_11">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>r2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>B0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLabel" name="label_B0_2">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>B1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QLabel" name="label_r_2">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_10">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>r</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_12">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>yK</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>0</y>
+     <width>229</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Resultados</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>280</y>
+     <width>74</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>tail area </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>430</y>
+     <width>74</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>LPI(70%)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>380</y>
+     <width>74</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>UPI(70%)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>330</y>
+     <width>74</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Range</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_taile">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>280</y>
+     <width>149</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDialog {
+            background: qlineargradient(
+                spread:pad,
+                x1:0, y1:0, x2:1, y2:1,
+                stop:0 #022c22,
+                stop:1 #064e3b
+            );
+        }
+
+        QLabel {
+            color: #6ee7b7;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        QLineEdit {
+            background-color: #020617;
+            border: 2px solid #10b981;
+            border-radius: 10px;
+            padding: 6px;
+            color: #d1fae5;
+            selection-background-color: #10b981;
+            selection-color: black;
+        }
+
+        QLineEdit:focus {
+            border: 2px solid #34d399;
+            background-color: #020617;
+        }
+
+        QPushButton {
+            background: qlineargradient(
+                spread:pad,
+                x1:0, y1:0, x2:1, y2:0,
+                stop:0 #34d399,
+                stop:1 #059669
+            );
+            color: white;
+            border-radius: 12px;
+            padding: 8px;
+            font-weight: bold;
+            border: none;
+        }
+
+        QPushButton:hover {
+            background: qlineargradient(
+                spread:pad,
+                x1:0, y1:0, x2:1, y2:0,
+                stop:0 #6ee7b7,
+                stop:1 #10b981
+            );
+        }
+
+        QPushButton:pressed {
+            background-color: #047857;
+        }
+
+        QLabel#LABEL_RESULTADOS {
+            background-color: #020617;
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            padding: 6px;
+            color: #bbf7d0;
+            font-weight: bold;
+            font-size: 13px;
+        }
+</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_range">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>330</y>
+     <width>149</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_UPI">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>390</y>
+     <width>149</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_LPI">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>430</y>
+     <width>149</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
   </widget>
  </widget>
  <resources/>
