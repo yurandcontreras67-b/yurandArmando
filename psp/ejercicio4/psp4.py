@@ -40,11 +40,8 @@ class PSP4(PSP3):
         super().__init__(1, dof, self.p)
         t = super().calcular()
         den = sum((x[i] - x_avg) ** 2 for i in range(n))
-        rango = t * sigma * math.sqrt(
-            1 + (1 / n) + ((self.xk - x_avg) ** 2 / den)
-        )
+        rango = t * sigma * math.sqrt(1 + (1 / n) + ((self.xk - x_avg) ** 2 / den))
 
-    
         upi = yk + rango
         lpi = yk - rango
 
